@@ -1,0 +1,180 @@
+.home{
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.createpostwrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.createpost{
+    width: 80%;
+    display: flex;
+}
+
+.button{
+    border-radius: 20px 20px !important;
+    height: 40px;
+    width: 145px;
+}
+
+.postwrapper{
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    /* cursor: pointer; */
+}
+
+.gridrow{
+    justify-content: center;
+}
+
+.postwrapper:hover{
+    transform: scale(1.01);
+}
+
+.colpostwrapper{
+    transition: .3s ease-in-out;
+}
+
+.colpostwrapper:hover{
+    transform: scale(1.02);
+}
+
+.postgrid{
+    box-shadow: 1px 2px 6px -2px black;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.viewicon{
+    cursor: pointer;
+}
+
+.post{
+    box-shadow: 1px 2px 6px -2px black;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.postimage{
+    height: 30px;
+    width: 30px;
+    border-radius: 50% 50%;
+}
+
+.postinfo{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.name{
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.time{
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gridname{
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gridtime{
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.body{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* .like{
+    
+} */
+
+.likeicon{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+@media screen and (max-width:992px) {
+    .name{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .button{
+        border-radius: 15px 15px !important;
+        font-size: 12px !important;
+        height: 35px;
+        width: 130px;
+    }
+
+    .time{
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .body{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .likeicon{
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .name{
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .button{
+        border-radius: 15px 15px !important; 
+        font-size: 8px !important;
+        height: 25px;
+        width: 95px;
+
+    }
+
+    .time{
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .body{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .likeicon{
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}

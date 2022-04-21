@@ -1,0 +1,71 @@
+.Header{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 80%;
+    background-color: #0dcaf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.headercontent{
+    display: flex;
+}
+
+.headercontent div{
+    cursor: pointer;
+}
+
+.headercontent div:hover{
+    color: blue;
+}
+
+.image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50% 50%;
+}
+
+.name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loginout{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width:992px) {
+    
+    .title{
+        font-size: 18px;
+    }
+    .headercontent{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .title{
+        font-size: 13px;
+    }
+    .image{
+        height: 20px;
+        width: 20px;
+    }
+    .headercontent{
+        font-size: 12px;
+    }
+}
+

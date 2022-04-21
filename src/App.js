@@ -1,30 +1,33 @@
 import logo from './logo.svg';
-import './App.css';
-import { EasybaseProvider, useEasybase } from 'easybase-react';
-// import Firebase from 'firebase';
-import config from './config';
+import classes from './App.module.css';
+// import { EasybaseProvider, useEasybase } from 'easybase-react';
+// import {initializeApp} from 'firebase/app';
+// import Firebase from 'firebase'
+import Home from './components/Home';
+import Header from './components/Header/Header';
 import GoogleLogin from 'react-google-login';
 
 function App() {
-  // Firebase.initializeApp(config.firebase);
+
   const responseGoogle = (response) => {
     console.log(response);
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <GoogleLogin
-          clientId="476092438228-q8saqudafpjmvgvragkp69qmglfudauu.apps.googleusercontent.com"
+      <div className={classes.header}>
+        <Header />
+      </div>
+
+      <div className={classes.home}>
+        <Home />
+      </div>
+        {/* <GoogleLogin
+          clientId={process.env.REACT_APP_GOOGLE_TOKEN}
           buttonText="Login"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
           cookiePolicy={'single_host_origin'}
-        />
-      </header>
+        /> */}
     </div>
   );
 }
