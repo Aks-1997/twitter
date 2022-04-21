@@ -79,7 +79,7 @@ const Home = (props) => {
         {
             display = post?.map((info,id)=>{
                 return (
-                    <ListPost info={info} key={uid()} />
+                    <ListPost info={info} key={info.uid} />
                 )
             })
         }
@@ -87,7 +87,7 @@ const Home = (props) => {
         {
             display = post?.map((info,id)=>{
                 return (
-                    <GridPost info={info} key={uid()} />
+                    <GridPost info={info} key={info.uid} />
                 )
             })
         }
