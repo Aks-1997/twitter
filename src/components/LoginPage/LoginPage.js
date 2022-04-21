@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 import classes from './LoginPage.module.css';
 import GoogleLogin from 'react-google-login';
 import {onLogin} from '../../store/actions';
-import {useSelector,useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
+import {log,logtype} from '../../services/LogService';
 
 const NewPost = (props) => {
 
@@ -11,6 +12,9 @@ const NewPost = (props) => {
 
 
     const successresponseGoogle = (response) => {
+        log("success",logtype.Info);
+        log("login data : ",logtype.Debug);
+        log(response,logtype.Debug);
         Dispatch(onLogin(true,response?.profileObj?.name,response?.profileObj?.email,response?.tokenObj?.access_token,response?.profileObj?.imageUrl))
         localStorage.setItem("auth",true);
         localStorage.setItem("name",response?.profileObj?.name);
