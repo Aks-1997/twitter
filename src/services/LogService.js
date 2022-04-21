@@ -11,7 +11,7 @@ export const log = (text,type) => {
     }
     if(type==2)
     {
-        console.log(text);
+        // console.log(text);
     }
     if(type==3)
     {

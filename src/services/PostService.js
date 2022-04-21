@@ -15,8 +15,8 @@ export const getPosts = async (res) => {
     }
     catch(error)
     {
-        log("Services->PostService->getPosts->Error getting Post data",logtype.Info)
-        log(error,logtype.Info);
+        log("Services->PostService->getPosts->Error getting Post data",logtype.Error)
+        log(error,logtype.Error);
     }
    
 }
@@ -36,8 +36,8 @@ export const makePost = async (post) => {
     }
     catch(error)
     {
-        log("Services->PostService->makePost->Error getting Post data",logtype.Info)
-        log(error,logtype.Info);
+        log("Services->PostService->makePost->Error getting Post data",logtype.Error)
+        log(error,logtype.Error);
     }
     
 }
@@ -57,7 +57,7 @@ export const likePost = async (post,likes) => {
     }
     catch(error)
     {
-        log("Services->PostService->likePost->Error getting Post data",logtype.Info)
-        log(error,logtype.Info);
+        log("Services->PostService->likePost->Error getting Post data",logtype.Error)
+        log(error,logtype.Error);
     }
 }
