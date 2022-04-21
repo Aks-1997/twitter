@@ -12,6 +12,7 @@ import {Row} from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import GridPost from './GridPost/GridPost';
 import ListPost from './ListPost/ListPost';
+import {uid} from 'uid';
 
 const useStyles = makeStyles({
     postborder: {
@@ -78,7 +79,7 @@ const Home = (props) => {
         {
             display = post?.map((info,id)=>{
                 return (
-                    <ListPost info={info} key={info+id} />
+                    <ListPost info={info} key={uid()} />
                 )
             })
         }
@@ -86,7 +87,7 @@ const Home = (props) => {
         {
             display = post?.map((info,id)=>{
                 return (
-                    <GridPost info={info} key={info+id} />
+                    <GridPost info={info} key={uid()} />
                 )
             })
         }
